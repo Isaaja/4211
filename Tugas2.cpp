@@ -53,8 +53,8 @@ int min(int a, int b){      // definisi dari mencari 2 nilai terkecil
 
 int MaxArray(int arr[], int size){      //definisi dari mencari nilai array terbesar
     int sum = 0;
-    for(int i=0; i< size; i++){
-        if(arr[i] < sum){
+    for(int i=0; i< 4; i++){
+        if(sum < arr[i]){
             sum = arr[i];
         }
         else{
@@ -66,7 +66,7 @@ int MaxArray(int arr[], int size){      //definisi dari mencari nilai array terb
 int MinArray(int arr[], int size)       //definisi dari mencari nilai array terkecil
 {
     int sum = 0;
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < 4; i++)
     {
         if (arr[i] > sum)
         {
@@ -75,8 +75,8 @@ int MinArray(int arr[], int size)       //definisi dari mencari nilai array terk
         else{
             sum = sum;
         }
-    }
     return sum;
+    }
 }
 
 bool Even(int a){                       //definisi dari mencari nilai genap menggunakan boolean
@@ -127,7 +127,7 @@ int sumOdd(int arr[], int size)         //definisi menjunmlahkan nilai ganjil da
         if (arr[i] % 2 == 1)
         {
             sum = sum + arr[i];
-            
+
         }
     }
     return sum;
